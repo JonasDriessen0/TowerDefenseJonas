@@ -21,10 +21,7 @@ public class WaypointFollower : MonoBehaviour
         {
             nextWaypointIndex++;
 
-            Vector3 targetPos = waypoints[nextWaypointIndex].transform.position;
-            Vector3 targetPosFlattened = new Vector3(targetPos.x, targetPos.y - 90, 0);
-            transform.LookAt(targetPosFlattened);
-            //transform.localEulerAngles = new Vector3(0, 0, Mathf.Atan2(Y,X));
+            transform.right = waypoints[nextWaypointIndex].position - transform.position;
         }
         if (nextWaypointIndex >= waypoints.Length)
         {
