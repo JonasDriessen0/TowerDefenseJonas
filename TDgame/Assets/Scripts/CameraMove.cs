@@ -6,6 +6,12 @@ public class CameraMove : MonoBehaviour
 {
     private Vector3 Origin;
     private Vector3 Difference;
+
+    public float XcamBorderLeft;
+    public float XcamBorderRight;
+    public float YcamBorderLeft;
+    public float YcamBorderRight;
+
     private Vector3 ResetCamera;
 
     private bool drag = false;
@@ -39,8 +45,8 @@ public class CameraMove : MonoBehaviour
         {
             Camera.main.transform.position = Origin - Difference;
             Camera.main.transform.position = new Vector3(
-            Mathf.Clamp(Camera.main.transform.position.x, -26, 5.8f),
-            Mathf.Clamp(Camera.main.transform.position.y, -3, 3), transform.position.z);
+            Mathf.Clamp(Camera.main.transform.position.x, -XcamBorderLeft, XcamBorderRight),
+            Mathf.Clamp(Camera.main.transform.position.y, -YcamBorderLeft, YcamBorderRight), transform.position.z);
         }
     }
 }
