@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Path
+  - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -51,6 +53,9 @@ TagManager:
   - name: turrets
     uniqueID: 4242800893
     locked: 0
-  - name: New Layer 4
+  - name: bullets
     uniqueID: 3121415803
+    locked: 0
+  - name: New Layer 5
+    uniqueID: 2942818249
     locked: 0
