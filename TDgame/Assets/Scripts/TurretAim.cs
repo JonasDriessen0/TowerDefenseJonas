@@ -7,7 +7,6 @@ public class TurretAim : MonoBehaviour
     [SerializeField] private Transform enemies;
     public Transform turret;
 
-    // Update is called once per frame
     void Update()
     {
         turret.transform.up = enemies.position - turret.transform.position;

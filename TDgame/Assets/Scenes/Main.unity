@@ -276,7 +276,7 @@ MonoBehaviour:
   - {fileID: 690605321}
   - {fileID: 1550882089}
   - {fileID: 1621011844}
-  speed: 1
+  speed: 2
   nextWaypointIndex: 1
   reachedWaypointClearance: 0.25
 --- !u!1 &519420028
@@ -427,8 +427,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db1f651f47c982943a09d05144f4d04b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ZoomChange: 100
-  SmoothChange: 2
+  ZoomChange: 70
+  SmoothChange: 1
   MinSize: 2
   MaxSize: 9
   camMove: {fileID: 519420034}
@@ -2448,7 +2448,7 @@ MonoBehaviour:
   bullet: {fileID: 4589733343643185105, guid: c44918a0229b09f4a91ff9de84905b00, type: 3}
   canShoot: 0
   shootAudioSource: {fileID: 1403952496}
-  nextBulletTime: 0.3
+  nextBulletTime: 0.15
 --- !u!82 &1403952496
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2459,7 +2459,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 8bb504b6077a10647b93f9b5b8d8a9d7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 7f35ab34cbce65344af5e3002f0b7a5e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.679
   m_Pitch: 1
