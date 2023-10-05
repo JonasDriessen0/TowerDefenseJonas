@@ -13,17 +13,20 @@ public class TurretShoot : MonoBehaviour
     public Animator animator;
     void Start()
     {
-        canShoot = true;
+        canShoot = false;
         animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        Shoot();
-        if (nextbullet > 0)
+        if (canShoot)
         {
-            nextbullet -= Time.deltaTime;
+            Shoot();
+            if (nextbullet > 0)
+            {
+                nextbullet -= Time.deltaTime;
+            }
         }
     }
 
