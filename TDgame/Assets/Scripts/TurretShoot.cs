@@ -13,7 +13,7 @@ public class TurretShoot : MonoBehaviour
     public Animator animator;
     void Start()
     {
-        canShoot = false;
+        canShoot = true;
         animator = GetComponent<Animator>();
     }
 
