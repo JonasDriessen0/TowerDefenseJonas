@@ -17,7 +17,6 @@ public class TurretShoot : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (canShoot)
