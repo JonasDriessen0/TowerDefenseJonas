@@ -1418,6 +1418,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 854181070}
+  - {fileID: 1020909185}
   m_Father: {fileID: 630963844}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1545,9 +1546,9 @@ GameObject:
   m_Component:
   - component: {fileID: 854181070}
   m_Layer: 0
-  m_Name: FirePoint
+  m_Name: FirePoint1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -1559,7 +1560,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854181069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.368, z: 0}
+  m_LocalPosition: {x: -0.063, y: 0.368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1667,6 +1668,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1020909184
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1020909185}
+  m_Layer: 0
+  m_Name: FirePoint2
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1020909185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1020909184}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.06, y: 0.368, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 760369939}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085988402
 GameObject:
   m_ObjectHideFlags: 0
@@ -4264,6 +4296,7 @@ GameObject:
   - component: {fileID: 1482025690}
   - component: {fileID: 1482025689}
   - component: {fileID: 1482025691}
+  - component: {fileID: 1482025692}
   m_Layer: 5
   m_Name: DoubleTurret
   m_TagString: Untagged
@@ -4385,6 +4418,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1482025692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482025687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8286a98cbf37b2449b2fae48a0c0ed14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  lockedSprite: {fileID: 21300000, guid: f302405b72ccaac4fb1146bd7a352a68, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 7a0d7515ad427f0478afe8aa590fe1fc, type: 3}
+  iconImage: {fileID: 1482025689}
 --- !u!1 &1490580322
 GameObject:
   m_ObjectHideFlags: 0
@@ -4397,6 +4446,7 @@ GameObject:
   - component: {fileID: 1490580325}
   - component: {fileID: 1490580324}
   - component: {fileID: 1490580326}
+  - component: {fileID: 1490580327}
   m_Layer: 5
   m_Name: SmallTurret
   m_TagString: Untagged
@@ -4518,6 +4568,22 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1490580327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490580322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8286a98cbf37b2449b2fae48a0c0ed14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isLocked: 0
+  lockedSprite: {fileID: 21300000, guid: 25e8d4db3d994834799830a77c83bc0b, type: 3}
+  unlockedSprite: {fileID: 21300000, guid: 0692fb40023b8744f93e06e520240cfe, type: 3}
+  iconImage: {fileID: 1490580324}
 --- !u!1 &1528872054
 GameObject:
   m_ObjectHideFlags: 0
