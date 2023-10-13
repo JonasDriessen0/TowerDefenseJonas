@@ -2,20 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretTest : MonoBehaviour
+public class TurretDeployAnim : MonoBehaviour
 {
     public Animator animator;
 
     void Start()
     {
         animator = GetComponent<Animator>();
-    }
+        animator.SetTrigger("TurretDeploy");
 
-    void Update()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            animator.SetTrigger("TurretDeploy");
-        }
     }
 }

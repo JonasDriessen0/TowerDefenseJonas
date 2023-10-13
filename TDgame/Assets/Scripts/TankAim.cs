@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class TurretAim : MonoBehaviour
 {
-    [SerializeField] private Transform enemies;
+    public Transform enemies;
     public Transform turret;
+    public bool canAim;
+
+    private void Start()
+    {
+        enemies = GameObject.FindWithTag("Enemy").transform;
+        canAim = true;
+    }
+
 
     void Update()
     {

@@ -10,18 +10,22 @@ public class TurretShoot : MonoBehaviour
     private float nextbullet;
     public AudioSource shootAudioSource;
     public float nextBulletTime = 0.2f;
+    public Animator animator;
     void Start()
     {
         canShoot = true;
+        animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Shoot();
-        if (nextbullet > 0)
+        if (canShoot)
         {
-            nextbullet -= Time.deltaTime;
+            Shoot();
+            if (nextbullet > 0)
+            {
+                nextbullet -= Time.deltaTime;
+            }
         }
     }
 
@@ -34,8 +38,8 @@ public class TurretShoot : MonoBehaviour
 
         Instantiate(bullet, firePoint.position, firePoint.rotation);
         nextbullet = nextBulletTime;
+        animator.SetTrigger("Shoot");
 
-        // Play the audio clip
         shootAudioSource.Play();
     }
 }
