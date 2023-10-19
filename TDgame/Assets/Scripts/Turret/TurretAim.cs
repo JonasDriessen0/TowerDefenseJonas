@@ -2,21 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankAim : MonoBehaviour
+public class TurretAim : MonoBehaviour
 {
+    public Transform enemies;
     public Transform turret;
-    public Transform tankgun;
-    public bool canAim;
 
     private void Start()
     {
-        turret = GameObject.FindWithTag("Turret").transform;
-        canAim = true;
+        enemies = GameObject.FindWithTag("Enemy").transform;
     }
 
 
-    void Update()
+    public void Aim()
     {
-        tankgun.transform.right = turret.position - tankgun.transform.position;
+        turret.transform.up = enemies.position - turret.transform.position;
     }
 }

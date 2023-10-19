@@ -6,7 +6,7 @@ public class WaypointFollower : MonoBehaviour
 {
     [SerializeField] private Transform[] waypoints;
     public float speed = 1;
-    [SerializeField] private int nextWaypointIndex = 1;
+    private int nextWaypointIndex = 0;
     [SerializeField] private float reachedWaypointClearance = 0.25f;
 
     private void Start()
