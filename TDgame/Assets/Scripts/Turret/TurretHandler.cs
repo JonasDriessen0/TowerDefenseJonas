@@ -17,12 +17,11 @@ public class TurretHandler : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("help");
-        if (tc.enemyInRange)
+        Transform closestEnemy = tc.GetClosestEnemy();
+        if (closestEnemy != null)
         {
-            ta.Aim();
+            ta.SetTarget(closestEnemy);
             ts.Shoot();
-            Debug.Log("enemy is targetable");
         }
     }
 }

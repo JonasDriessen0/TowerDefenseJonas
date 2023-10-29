@@ -4,22 +4,47 @@ using UnityEngine;
 
 public class TurretCollider : MonoBehaviour
 {
-    public bool enemyInRange = false;
+    private List<Transform> enemiesInRange = new List<Transform>();
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
-        {
-            enemyInRange = true;
-            Debug.Log("Het werukt");
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
-            enemyInRange = false;
+            Transform enemy = collision.transform;
+            if (!enemiesInRange.Contains(enemy))
+            {
+                enemiesInRange.Add(enemy);
+            }
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Transform enemy = collision.transform;
+            if (enemiesInRange.Contains(enemy))
+            {
+                enemiesInRange.Remove(enemy);
+            }
+        }
+    }
+
+    public Transform GetClosestEnemy()
+    {
+        Transform closestEnemy = null;
+        float closestDistance = float.MaxValue;
+
+        foreach (Transform enemy in enemiesInRange)
+        {
+            float distance = Vector3.Distance(transform.position, enemy.position);
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestEnemy = enemy;
+            }
+        }
+
+        return closestEnemy;
     }
 }

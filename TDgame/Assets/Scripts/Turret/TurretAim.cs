@@ -4,17 +4,19 @@ using UnityEngine;
 
 public class TurretAim : MonoBehaviour
 {
-    public Transform enemies;
-    public Transform turret;
+    private Transform target;
+    public GameObject TurretRot;
 
-    private void Start()
+    private void Update()
     {
-        enemies = GameObject.FindWithTag("Enemy").transform;
+        if (target != null)
+        {
+            TurretRot.transform.up = target.position - TurretRot.transform.position;
+        }
     }
 
-
-    public void Aim()
+    public void SetTarget(Transform newTarget)
     {
-        turret.transform.up = enemies.position - turret.transform.position;
+        target = newTarget;
     }
 }

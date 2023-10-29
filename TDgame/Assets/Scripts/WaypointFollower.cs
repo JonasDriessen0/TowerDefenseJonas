@@ -16,16 +16,18 @@ public class WaypointFollower : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, waypoints[nextWaypointIndex].position, Time.deltaTime * speed);
-        if (Vector3.Distance(transform.position, waypoints[nextWaypointIndex].position) <= reachedWaypointClearance)
+        float distanceToWaypoint = Vector3.Distance(transform.position, waypoints[nextWaypointIndex].position);
+
+        if (distanceToWaypoint <= reachedWaypointClearance)
         {
             nextWaypointIndex++;
+            if (nextWaypointIndex >= waypoints.Length)
+            {
+                nextWaypointIndex = 0;
+            }
+        }
 
-            transform.right = waypoints[nextWaypointIndex].position - transform.position;
-        }
-        if (nextWaypointIndex >= waypoints.Length)
-        {
-            nextWaypointIndex = 0;
-        }
+        transform.position = Vector3.MoveTowards(transform.position, waypoints[nextWaypointIndex].position, Time.deltaTime * speed);
+        transform.right = waypoints[nextWaypointIndex].position - transform.position;
     }
 }
