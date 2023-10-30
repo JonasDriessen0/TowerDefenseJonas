@@ -11,14 +11,20 @@ public class EnemySpawner : MonoBehaviour
     public GameObject cyborgPrefab;
     public WaypointFollower enemyScript;
 
-    public float spawnSpeed = 1;
+    public bool canSpawnTank;
+    public bool canSpawnCyborg;
+
+    private float spawnSpeed = 1;
     private int waveNumber = 0;
-    private int soldiersToSpawn = 6; // Initial number of soldiers
-    private int remainingSoldiers = 0; // Number of remaining soldiers to spawn
+    private int soldiersToSpawn = 6;
+    private int remainingSoldiers = 0;
 
     void Start()
     {
-        StartNewWave(); // Start the first wave
+        StartNewWave();
+        enemyScript.speed = 1.5f;
+        canSpawnTank = false;
+        canSpawnCyborg = false;
     }
 
     void Update()
@@ -38,29 +44,28 @@ public class EnemySpawner : MonoBehaviour
         remainingSoldiers = soldiersToSpawn;
 
         StartCoroutine(SpawnSoldiers());
-        soldiersToSpawn += 3*waveNumber;
-        if (spawnSpeed >= 0.3f)
-        {
+        soldiersToSpawn += 3 * waveNumber;
+
+        if(spawnSpeed >= 0.3f)
             spawnSpeed -= (0.02f * waveNumber);
-        }
-        if (enemyScript.speed <= 20f)
-        {
+
+        if(enemyScript.speed <= 20f)
             enemyScript.speed += (0.08f * waveNumber);
-        }
     }
 
     IEnumerator SpawnSoldiers()
     {
         for (int i = 0; i < remainingSoldiers; i++)
         {
-            SpawnEnemy(soldierPrefab);
+            Instantiate(soldierPrefab);
+            remainingSoldiers--;
             yield return new WaitForSeconds(spawnSpeed);
         }
     }
 
-    void SpawnEnemy(GameObject enemyPrefab)
+    void SpawnEnemy()
     {
-        GameObject enemy = Instantiate(enemyPrefab);
+        Instantiate(soldierPrefab);
         remainingSoldiers--;
     }
 }

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6289353066848007652}
   - component: {fileID: 6289353066848007653}
   - component: {fileID: 4638134874990917569}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tank
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -65,6 +65,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 200
   bullet: {fileID: 0}
+  spriteRenderer: {fileID: 6289353067101143373}
 --- !u!50 &6289353066848007652
 Rigidbody2D:
   serializedVersion: 4
@@ -114,7 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f63a4f659175d4ca09fe0d332d801c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turret: {fileID: 0}
   tankgun: {fileID: 6289353067222838507}
   canAim: 0
 --- !u!1 &6289353067101143375
@@ -127,7 +127,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6289353067101143374}
   - component: {fileID: 6289353067101143373}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tankbase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6289353067222838507}
   - component: {fileID: 6289353067222838506}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tankturret
   m_TagString: Untagged
   m_Icon: {fileID: 0}

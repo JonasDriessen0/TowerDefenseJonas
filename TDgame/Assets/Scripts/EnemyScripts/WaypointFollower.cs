@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WaypointFollower : MonoBehaviour
 {
@@ -27,12 +28,6 @@ public class WaypointFollower : MonoBehaviour
 
     private void Update()
     {
-        if (waypoints == null || waypoints.Length == 0)
-        {
-            Debug.LogError("No waypoints assigned!");
-            return;
-        }
-
         float distanceToWaypoint = Vector3.Distance(transform.position, waypoints[nextWaypointIndex].position);
 
         if (distanceToWaypoint <= reachedWaypointClearance)
@@ -42,6 +37,11 @@ public class WaypointFollower : MonoBehaviour
             {
                 nextWaypointIndex = 0;
             }
+        }
+
+        if (nextWaypointIndex == 16)
+        {
+            SceneManager.LoadScene("EndScreen");
         }
 
         transform.position = Vector3.MoveTowards(transform.position, waypoints[nextWaypointIndex].position, Time.deltaTime * speed);

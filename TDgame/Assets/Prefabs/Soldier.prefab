@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8234966072247240357}
   - component: {fileID: 8234966072247240358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: soldier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 8234966072898356707}
   - component: {fileID: 8234966072898356706}
   - component: {fileID: 8234966072898356705}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Soldier
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65411bbb3452f4c49ba9d7ac5cdf29ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 21.74
   reachedWaypointClearance: 0.25
 --- !u!58 &8234966072898356707
 CircleCollider2D:

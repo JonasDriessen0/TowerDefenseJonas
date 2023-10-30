@@ -18,7 +18,6 @@ public class EnemyHP : MonoBehaviour
     {
         if (collision.gameObject.tag == "Bullet")
         {
-            Debug.Log("enemy hit");
             hp -= 15;
 
             StartCoroutine(FlashRed());
