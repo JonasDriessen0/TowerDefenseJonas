@@ -12,7 +12,6 @@ public class WaypointFollower : MonoBehaviour
 
     private void Start()
     {
-        // Find all GameObjects with a specific tag and store their Transforms in the waypoints array.
         GameObject[] waypointObjects = GameObject.FindGameObjectsWithTag("Waypoint");
         waypoints = new Transform[waypointObjects.Length];
         for (int i = 0; i < waypointObjects.Length; i++)

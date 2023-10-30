@@ -54,7 +54,7 @@ public class EnemySpawner : MonoBehaviour
         for (int i = 0; i < remainingSoldiers; i++)
         {
             SpawnEnemy(soldierPrefab);
-            yield return new WaitForSeconds(spawnSpeed); // Adjust the time between soldier spawns.
+            yield return new WaitForSeconds(spawnSpeed);
         }
     }
 
