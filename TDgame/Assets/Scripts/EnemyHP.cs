@@ -6,6 +6,13 @@ public class EnemyHP : MonoBehaviour
 {
     public int hp = 100;
     public GameObject bullet;
+    public SpriteRenderer spriteRenderer;
+    private Color originalColor;
+
+    void Start()
+    {
+        originalColor = spriteRenderer.color;
+    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,14 +20,23 @@ public class EnemyHP : MonoBehaviour
         {
             Debug.Log("enemy hit");
             hp -= 15;
+
+            StartCoroutine(FlashRed());
         }
     }
 
     void Update()
     {
-        if(hp <= 0)
+        if (hp <= 0)
         {
             Destroy(gameObject);
         }
+    }
+
+    IEnumerator FlashRed()
+    {
+        spriteRenderer.color = Color.red;
+        yield return new WaitForSeconds(0.05f);
+        spriteRenderer.color = originalColor;
     }
 }

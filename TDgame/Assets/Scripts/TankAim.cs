@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TankAim : MonoBehaviour
 {
-    public Transform turret;
+    private Transform turret;
     public Transform tankgun;
     public bool canAim;
 
