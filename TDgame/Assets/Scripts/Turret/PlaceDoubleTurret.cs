@@ -9,6 +9,7 @@ public class PlaceDoubleTurret : MonoBehaviour
     public GameObject PlaceIndicator;
     public GameObject Turret;
     public TurretShoot Tshoot;
+    public MetalHandler metal;
     private bool dragging = false;
     private Vector3 mousePosition;
     private GameObject placedIndicator;
@@ -42,7 +43,8 @@ public class PlaceDoubleTurret : MonoBehaviour
 
     public void TurretToMouse()
     {
-        if (!dragging)
+        metal.metal -= 3800;
+        if (placedIndicator == null)
         {
             dragging = true;
             Vector3Int cellPosition = gridTilemap.WorldToCell(mousePosition);

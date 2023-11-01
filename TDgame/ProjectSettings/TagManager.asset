@@ -8,6 +8,8 @@ TagManager:
   - Bullet
   - Enemy
   - Turret
+  - Waypoint
+  - MenuHandler
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Tank
   - 
   - 
   - 

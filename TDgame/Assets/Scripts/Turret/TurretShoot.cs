@@ -17,11 +17,11 @@ public class TurretShoot : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    void Update()
+    public void Shoot()
     {
         if (canShoot)
         {
-            Shoot();
+            Fire();
             if (nextbullet > 0)
             {
                 nextbullet -= Time.deltaTime;
@@ -29,7 +29,7 @@ public class TurretShoot : MonoBehaviour
         }
     }
 
-    void Shoot()
+    void Fire()
     {
         if (nextbullet > 0)
         {

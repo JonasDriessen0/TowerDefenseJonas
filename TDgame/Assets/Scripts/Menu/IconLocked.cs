@@ -7,6 +7,8 @@ public class IconLocked : MonoBehaviour
 
     public Sprite lockedSprite;
     public Sprite unlockedSprite;
+    public MetalHandler metal;
+    public int cost;
 
     public Image iconImage;
 
@@ -28,6 +30,11 @@ public class IconLocked : MonoBehaviour
     }
     private void Update()
     {
+        if (metal.metal < cost)
+            isLocked = true;
+        else
+            isLocked = false;
+
         if (isLocked)
         {
             LockIcon();
