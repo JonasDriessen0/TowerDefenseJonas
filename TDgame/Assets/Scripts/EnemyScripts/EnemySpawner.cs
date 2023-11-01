@@ -7,24 +7,20 @@ public class EnemySpawner : MonoBehaviour
 {
     public TMP_Text waveNumberText;
     public GameObject soldierPrefab;
-    public GameObject tankPrefab;
-    public GameObject cyborgPrefab;
+    public GameObject WaveButton;
     public WaypointFollower enemyScript;
+    public EnemyHP ehp;
 
-    public bool canSpawnTank;
-    public bool canSpawnCyborg;
-
-    private float spawnSpeed = 1;
+    private float spawnSpeed = 1.4f;
     private int waveNumber = 0;
     private int soldiersToSpawn = 6;
     private int remainingSoldiers = 0;
 
     void Start()
     {
+        ehp.hp = 50;
         StartNewWave();
         enemyScript.speed = 1.5f;
-        canSpawnTank = false;
-        canSpawnCyborg = false;
     }
 
     void Update()
@@ -32,25 +28,29 @@ public class EnemySpawner : MonoBehaviour
         int remainingEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (remainingEnemies <= 0)
         {
-            StartNewWave();
+            WaveButton.SetActive(true);
         }
 
         waveNumberText.text = "Wave " + waveNumber;
     }
 
-    void StartNewWave()
+    public void StartNewWave()
     {
+        WaveButton.SetActive(false);
         waveNumber++;
         remainingSoldiers = soldiersToSpawn;
 
         StartCoroutine(SpawnSoldiers());
         soldiersToSpawn += 3 * waveNumber;
 
-        if(spawnSpeed >= 0.3f)
-            spawnSpeed -= (0.02f * waveNumber);
+        if(spawnSpeed >= 0.2f)
+            spawnSpeed -= (0.013f * waveNumber);
 
-        if(enemyScript.speed <= 20f)
-            enemyScript.speed += (0.08f * waveNumber);
+        if(enemyScript.speed <= 30f)
+            enemyScript.speed += (0.07f * waveNumber);
+
+        if (ehp.hp <= 260)
+            ehp.hp += (1.7f * waveNumber);
     }
 
     IEnumerator SpawnSoldiers()
@@ -61,11 +61,5 @@ public class EnemySpawner : MonoBehaviour
             remainingSoldiers--;
             yield return new WaitForSeconds(spawnSpeed);
         }
-    }
-
-    void SpawnEnemy()
-    {
-        Instantiate(soldierPrefab);
-        remainingSoldiers--;
     }
 }

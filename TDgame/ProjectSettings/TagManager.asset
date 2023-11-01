@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Turret
   - Waypoint
+  - MenuHandler
   layers:
   - Default
   - TransparentFX

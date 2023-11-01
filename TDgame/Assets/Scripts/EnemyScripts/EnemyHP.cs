@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class EnemyHP : MonoBehaviour
 {
-    public int hp = 100;
+    public float hp = 100;
     public GameObject bullet;
     public SpriteRenderer spriteRenderer;
+    public MetalHandler metal;
     private Color originalColor;
 
     void Start()
     {
+        GameObject metalObject = GameObject.FindGameObjectWithTag("MenuHandler");
+        if (metalObject != null)
+        {
+            metal = metalObject.GetComponent<MetalHandler>();
+        }
         originalColor = spriteRenderer.color;
     }
 
@@ -19,6 +25,7 @@ public class EnemyHP : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             hp -= 15;
+            metal.metal += 3;
 
             StartCoroutine(FlashRed());
         }
@@ -28,6 +35,7 @@ public class EnemyHP : MonoBehaviour
     {
         if (hp <= 0)
         {
+            metal.metal += 5;
             Destroy(gameObject);
         }
     }
