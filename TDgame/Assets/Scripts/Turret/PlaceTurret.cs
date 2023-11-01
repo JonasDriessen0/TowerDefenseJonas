@@ -8,7 +8,6 @@ public class PlaceTurret : MonoBehaviour
 {
     public GameObject PlaceIndicator;
     public GameObject Turret;
-    public TurretShoot Tshoot;
     public MetalHandler metal;
     private bool dragging = false;
     private Vector3 mousePosition;
