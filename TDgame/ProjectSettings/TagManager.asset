@@ -7,6 +7,9 @@ TagManager:
   - Path
   - Bullet
   - Enemy
+  - Turret
+  - Waypoint
+  - MenuHandler
   layers:
   - Default
   - TransparentFX
@@ -14,8 +17,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Tank
   - 
   - 
   - 
@@ -58,4 +61,10 @@ TagManager:
     locked: 0
   - name: New Layer 5
     uniqueID: 2942818249
+    locked: 0
+  - name: enemies
+    uniqueID: 4053895609
+    locked: 0
+  - name: Ui
+    uniqueID: 3298649675
     locked: 0

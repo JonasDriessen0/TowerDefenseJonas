@@ -1,24 +1,21 @@
 # TowerDefenseJonas
-Dit is een template wat door jullie te gebruiken is voor het juist inleveren van alle producten voor de Towerdefense beroepsopdracht. **Verwijder uiteindelijk de template teksten!**
 
-Begin met een korte omschrijving van je towerdefense game en hoe deze werkt. Plaats ook een paar screenshots.
+(ik wil even zeggen dat de volle build van de game een bug heeft waar de enemy niet naar de goede waypoints toe loopt deze bug is niet in de editor het is er alleen wanneer ik een build maak ik kan er gewoon niet uitkomen wat er mis mee is ik kan wel janken.)
 
 Mijn tower defense game focust op gewoon simplistisch zijn, van de artstyle tot de gameplay alles is simpel in mijn game. De gamplay bestaat uit het kopen van turrets met metaal wat je verdient met het raken van vijanden en die dan plaatsen op plekken waar ze de vijanden goed kunnen stoppen zodat ze niet op het einde komen want dan verlies je.
 
-![not really my game](https://cdn.akamai.steamstatic.com/steam/apps/246420/ss_aaaf33cdb9106bd0801a36049516d95c6f2352b0.600x338.jpg?t=1686321490)
+![Image Alt Text](readmeVisuals/pic1.png)
 
-![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
+![Image Alt Text](readmeVisuals/pic2.png)
 
 
 ## Product 1: "DRY SRP Scripts op GitHub"
 
-Plaats hier minimaal 1 link naar scripts die voldoen aan de eisen van **"Don't Repeat Yourself (DRY)"** en **"Single Responsibility Principle"**.
-Omschrijf hier waarom jij denkt dat je in die scripts aan deze eisen voldoet.
+In dit script gebruik ik een array om de waypoints te geven aan de enemy zodat hij ze kan volgen, met het gebruik van een array heb je dus niet dat je jezelf de hele tijd moet herhalen met elke waypoint die je hebt dus daarom is het DRY.
+[link naar script](/TDgame/Assets/Scripts/EnemyScripts/WaypointFollower.cs)
 
-Bijvoorbeeld:
-
-*"In dit script heb ik een array gebruikt voor al mijn vijanden die in de nieuwe wave worden gespawnd. Hierdoor heb ik mijzelf niet hoeven herhalen **(DRY)** in de code omdat ik met 1 regel alle enemies kan plaatsen via en for each loop.
-[link naar script](/MyTowerDefenseGame/Assets/Scripts/JustAScript.cs)"*
+Dit script is voor het aimen van de turret, dit is SRP is omdat het enige wat het doet is het aimt naar de target
+[link naar script](/TDgame/Assets/Scripts/Turret/TurretFunction/TurretAim.cs)
 
 ## Product 2: "Projectmappen op GitHub"
 
