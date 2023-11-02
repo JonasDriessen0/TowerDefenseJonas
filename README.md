@@ -4,7 +4,7 @@
 
 Mijn tower defense game focust op gewoon simplistisch zijn, van de artstyle tot de gameplay alles is simpel in mijn game. De gamplay bestaat uit het kopen van turrets met metaal wat je verdient met het raken van vijanden en die dan plaatsen op plekken waar ze de vijanden goed kunnen stoppen zodat ze niet op het einde komen want dan verlies je.
 
-help
+(./TowerDefenseJonas/readmeVisuals/pic1.png)
 
 ![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
 
