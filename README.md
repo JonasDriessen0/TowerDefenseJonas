@@ -6,7 +6,7 @@ Mijn tower defense game focust op gewoon simplistisch zijn, van de artstyle tot 
 
 ![Image Alt Text](readmeVisuals/pic1.png)
 
-![also not](https://cdn.akamai.steamstatic.com/steam/apps/960090/ss_900d7c00d45ff2a258d4c8d59ee47f7f04854c37.600x338.jpg?t=1686097340)
+![Image Alt Text](readmeVisuals/pic2.png)
 
 
 ## Product 1: "DRY SRP Scripts op GitHub"
