@@ -55,26 +55,23 @@ Omschrijf per mechanic welke game design keuzes je hebt gemaakt en waarom je dit
 
 *  **Je game bevat torens die kunnen mikken en schieten op een bewegend doel.** 
 
-*Mijn torens hebben ook nog een f.o.v waardoor je pas gaan mikken als enemies in de buurt zijn. ook hebben mijn torens geen 360 graden view maar 90 graden waardoor het een extra uitdaging is voor de speler om de torens ook op de meest tactische manier te roteren.*
+Mijn torens zijn "turrets" die je kan kopen met metal die je krijgt als je enemies neerknalt, er zijn 2 turrets: een groene turret die normaal schiet en een rode turret die sneller schiet.
 
 *  **Je game bevat vernietigbare vijanden die 1 of meerderen paden kunnen volgen.**  
 
-*Mijn enemies bevatten 3 types: 
-1 snelle die ook snel dood gaat. echter als er veel snelle enemies zijn is de kans steeds groter dat ze bij hun doel komen omdat de torens maar 1 enemy tegelijk kan targetten. Het forceert de speler dus om veel goedkope torens te plaatsen.
-Ook is er een langzame gepantserde enemy. Deze kan eigenlijk alleen maar worden vernietigd door magische torens die zijn geupgrade. goedkope torens doen bijna geen schade. De speler moet dus een balans gaan zoeken tussen veel goedkope torens en upgraden van torens.
-Tot slot is er een vijand die andere enemies healt dit zorgt ervoor dat de speler een extra nadeel heeft en de torens handmatig de deze healer moet laten targetten hierdoor wordt de speler gedwongen om actiever de game te spelen omdat anders geen enkele enemy meer dood gaat.*
+Mijn vijanden zijn soldaatjes die 1 pad kunnen volgen en proberen het einde te raken. Hoe hoger de waves worden hoe moeilijker te vechten deze soldaten worden omdat met elke wave stijgt hun snelheid, spawnsnelheid en hp exponentieel dus in de latere waves word het een stuk moeilijker om je base te verdedigen.
 
 *  **Je game bevat een “wave” systeem waarmee er onder bepaalde voorwaarden (tijd/vijanden op) nieuwe waves met vijanden het veld in komen.**
 
-*Onderbouwing hier...*
+Mijn spel is eindeloos dus het doel is eigenlijk om bij een zo hoog mogelijk wave te komen. Zoals ik al eerder had geschreven worden de enemies die gespawned worden elke wave moeilijker. Ook een feature van mijn wave system is dat de waves niet automatisch doorgaan maar je moet zelf een knop klikken zodat de waves doorgaan, dit geeft je genoeg tijd om turrets te kopen en je voor te bereiden op de vijanden.
 
 *  **Een “health” systeem waarmee je levens kunt verliezen als vijanden hun doel bereiken en zodoende het spel kunt verliezen.** 
 
-*Onderbouwing hier...*
+Bij mij is het gewoon zodra er een soldaat bij het laatste punt komt ben je dood.
 
 *  **Een “resource” systeem waarmee je resources kunt verdienen waarmee je torens kunt kopen en .evt upgraden.**
 
-*Onderbouwing hier...*
+Als je vijanden neerknalt verdien je "metal" dat is waarmee je weer andere turrets kan kopen. Je krijgt metal voor het raken van een vijand en het vermoorden van een vijand. De hoeveelhijd metal is te zien aan de linker bovenkant van je scherm.
 
 *  **Een “upgrade” systeem om je torens te verbeteren.**
 
@@ -130,7 +127,7 @@ Je maakt een SCRUM planning en geeft daarbij een inschatting aan elke userstory 
 
 Plaats in de readme een link naar je trello en **zorg ervoor dat je deze openbaar maakt**
 
-[Link naar de openbare trello](https://trello.com/b/w60wkKSU/examen-paraphrenia)
+[Link naar jonas trello]([https://trello.com/b/w60wkKSU/examen-paraphrenia](https://trello.com/b/TbbSU3oK/towerdefensegame))
 
 ## Product 10: Gitflow conventions
 
@@ -142,5 +139,5 @@ Verder worden features op een daarvoor bedoelde feature banch ontwikkeld. Ook ku
 
 Leg hier uit welke branches jij gaat gebruiken en wat voor namen je hier aan gaat meegeven. Hoe vaak ga je comitten en wat voor commit messages wil je geven?
 
-Meer info over het gebruiken van gitflow [hier](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
+Ik heb in het begin geen gitflow gebruikt omdat ik nog niet wist dat we het moesten gebruiken maar daarna heb ik het wel gebruikt en heb het redelijk goed gevolgd tot het einde waar ik een beetje zat te rotzooien, ik heb nu wel een redelijk idee hoe je gitflow moet gebruiken maar ik vind het nog steeds vrij lastig.
 
