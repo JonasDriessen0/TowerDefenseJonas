@@ -21,7 +21,7 @@ Dit script is voor het aimen van de turret, dit is SRP is omdat het enige wat he
 
 Je commit de mappenstructuur van je unity project op github en verwijst vanuit je readme naar de root map van je project. Met een netjes en goed gestructureerde mappenstructuur en benamingen van files toon je aan dat je dit leerdoel beheerst. 
 
-Dit is de [ROOT](/MyTowerDefenseGame/) folder van mijn unity project.
+Dit is de [ROOT](/TDgame/Assets/) folder van mijn unity project.
 
 Zorg dat deze verwijst naar je Develop branch.
 
