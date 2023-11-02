@@ -29,7 +29,7 @@ Zorg dat deze verwijst naar je Develop branch.
 
 Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eerst zijn verwijderd. Deze buildfiles upload je in je repository onder releases.  Bij eventuele afwijkingen moeten deze worden gedocumenteerd in de release. (Bijv controller nodig of spelen via netwerk etc..) 
 
-[Release Voorbeeld](https://github.com/erwinhenraat/TowerDefenseTemplate/releases)
+[Release Jonas]([https://github.com/erwinhenraat/TowerDefenseTemplate/releases](https://github.com/JonasDriessen0/TowerDefenseJonas/releases/tag/0.0.1))
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
