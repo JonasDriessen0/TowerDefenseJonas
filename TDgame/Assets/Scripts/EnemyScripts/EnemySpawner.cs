@@ -43,8 +43,8 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(SpawnSoldiers());
         soldiersToSpawn += 3 * waveNumber;
 
-        if(spawnSpeed >= 0.2f)
-            spawnSpeed -= (0.013f * waveNumber);
+        if(spawnSpeed >= 0.27f)
+            spawnSpeed -= (0.017f * waveNumber);
 
         if(enemyScript.speed <= 30f)
             enemyScript.speed += (0.07f * waveNumber);

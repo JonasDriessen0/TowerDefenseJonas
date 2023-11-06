@@ -3612,7 +3612,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlaceIndicator: {fileID: 8214751491916164569, guid: 9fd3aa0c9365e5b4ca448fee1ddea38b, type: 3}
   Turret: {fileID: 6102720946099520187, guid: ce1107adb5c0cc446a3b2264085a950f, type: 3}
-  Tshoot: {fileID: 6102720946099520184, guid: ce1107adb5c0cc446a3b2264085a950f, type: 3}
   metal: {fileID: 1183099392}
   gridTilemap: {fileID: 2089314800}
   gridCellSize: {x: 1, y: 1, z: 0}
@@ -4872,6 +4871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1791005146}
+  - component: {fileID: 1791005147}
   m_Layer: 0
   m_Name: Path
   m_TagString: Path
@@ -4911,6 +4911,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791005147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791005145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccaa62d89b611d045a76771035caff7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 748635669}
+  - {fileID: 1689556402}
+  - {fileID: 1833523987}
+  - {fileID: 183473867}
+  - {fileID: 1382977659}
+  - {fileID: 1191825326}
+  - {fileID: 690605321}
+  - {fileID: 1550882089}
+  - {fileID: 1621011844}
+  - {fileID: 2049686337}
+  - {fileID: 70780015}
+  - {fileID: 804918663}
+  - {fileID: 2003263877}
+  - {fileID: 775559916}
+  - {fileID: 436616699}
+  - {fileID: 637511490}
+  - {fileID: 1490080876}
 --- !u!1 &1833523986
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,17 +8,13 @@ public class WaypointFollower : MonoBehaviour
     public float speed = 1;
     private int nextWaypointIndex = 0;
     [SerializeField] private float reachedWaypointClearance = 0.1f;
-
+        
     private Transform[] waypoints;
 
     private void Start()
     {
-        GameObject[] waypointObjects = GameObject.FindGameObjectsWithTag("Waypoint");
-        waypoints = new Transform[waypointObjects.Length];
-        for (int i = 0; i < waypointObjects.Length; i++)
-        {
-            waypoints[i] = waypointObjects[i].transform;
-        }
+        Path path = FindObjectOfType<Path>();
+        waypoints = path.GetWaypoints();
 
         if (waypoints.Length > 0)
         {
