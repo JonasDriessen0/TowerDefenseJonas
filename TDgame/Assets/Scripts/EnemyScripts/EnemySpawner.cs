@@ -13,8 +13,9 @@ public class EnemySpawner : MonoBehaviour
 
     private float spawnSpeed = 1.4f;
     private int waveNumber = 0;
-    private int soldiersToSpawn = 6;
+    private int soldiersToSpawn = 7;
     private int remainingSoldiers = 0;
+    private float waveMult;
 
     void Start()
     {
@@ -41,16 +42,16 @@ public class EnemySpawner : MonoBehaviour
         remainingSoldiers = soldiersToSpawn;
 
         StartCoroutine(SpawnSoldiers());
-        soldiersToSpawn += 3 * waveNumber;
+        soldiersToSpawn += 4 * waveNumber;
 
         if(spawnSpeed >= 0.27f)
-            spawnSpeed -= (0.017f * waveNumber);
+            spawnSpeed -= (0.015f * waveNumber);
 
         if(enemyScript.speed <= 30f)
-            enemyScript.speed += (0.07f * waveNumber);
+            enemyScript.speed += (0.12f * waveNumber);
 
-        if (ehp.hp <= 260)
-            ehp.hp += (1.7f * waveNumber);
+        if (ehp.hp <= 230)
+            ehp.hp += (1.6f * waveNumber);
     }
 
     IEnumerator SpawnSoldiers()

@@ -42,7 +42,7 @@ public class PlaceTurret : MonoBehaviour
 
     public void TurretToMouse()
     {
-        metal.metal -= 400;
+        metal.metal -= 200;
         if (placedIndicator == null)
         {
             dragging = true;
