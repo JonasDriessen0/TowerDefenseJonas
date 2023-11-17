@@ -1,7 +1,5 @@
 # TowerDefenseJonas
 
-(ik wil even zeggen dat de volle build van de game een bug heeft waar de enemy niet naar de goede waypoints toe loopt deze bug is niet in de editor het is er alleen wanneer ik een build maak ik kan er gewoon niet uitkomen wat er mis mee is ik kan wel janken.)
-
 Mijn tower defense game focust op gewoon simplistisch zijn, van de artstyle tot de gameplay alles is simpel in mijn game. De gamplay bestaat uit het kopen van turrets met metaal wat je verdient met het raken van vijanden en die dan plaatsen op plekken waar ze de vijanden goed kunnen stoppen zodat ze niet op het einde komen want dan verlies je.
 
 ![Image Alt Text](readmeVisuals/pic1.png)
@@ -29,7 +27,7 @@ Zorg dat deze verwijst naar je Develop branch.
 
 Je maakt in Unity een stabiele “build” van je game waarbij bugs en logs eerst zijn verwijderd. Deze buildfiles upload je in je repository onder releases.  Bij eventuele afwijkingen moeten deze worden gedocumenteerd in de release. (Bijv controller nodig of spelen via netwerk etc..) 
 
-[Release Jonas]([https://github.com/erwinhenraat/TowerDefenseTemplate/releases](https://github.com/JonasDriessen0/TowerDefenseJonas/releases/tag/0.0.1))
+[Release Jonas](https://github.com/JonasDriessen0/TowerDefenseJonas/releases/tag/0.0.2)
 
 ## Product 4: Game met Sprites(animations) en Textures 
 
