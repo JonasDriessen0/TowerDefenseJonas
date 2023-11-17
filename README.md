@@ -46,8 +46,9 @@ Zodra je bugs tegenkomt maak je een issue aan op github. In de issue omschrijf j
 
 Je gebruikt een game design tool om je game design vast te leggen en te communiceren. Daarnaast onderbouw je de design keuzes ten aanzien van “playability” en “replayability” voor je game schriftelijk. 
 
-Voorbeeld van een one page design:
-![](https://external-preview.redd.it/48mnMpA0TbiihGo4HsJiWrJhK72xeTRwV2o70_AKilw.jpg?auto=webp&s=3a1ae18f0e4fba7a465643987cbe9cf409466e53)
+Jonas onepage design:
+
+![Image Alt Text](readmeVisuals/WordPage.png)
 
 Omschrijf per mechanic welke game design keuzes je hebt gemaakt en waarom je dit hebt gedaan.
 
